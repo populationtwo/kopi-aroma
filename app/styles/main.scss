@@ -26,6 +26,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 /* Compass */
 @import "compass/css3/images";
+@import "compass/typography/lists/inline-list";
 
 /* Tools */
 @import "tools/functions";
@@ -44,7 +45,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "layout/header";
 @import "layout/nav";
 @import "layout/footer";
-@import "layout/constrained";
+
 
 /* Modules */
 @import "modules/btn";

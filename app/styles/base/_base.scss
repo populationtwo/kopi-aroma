@@ -2,3 +2,29 @@
    Base
    =========================== */
 
+body {
+	background: #FFF;
+	color: #444;
+	margin: 0;
+	padding: 0;
+}
+
+.main-wrapper {
+	height: 100%;
+	@media (min-width: $screen-md-min) {
+		padding-left: 280px;
+	}
+}
+
+#menu {
+	position: fixed;
+	z-index: 100;
+	width: 280px;
+	height: 100%;
+	background: #222;
+	padding-right: 25px;
+	text-align: right;
+	-webkit-transform: translate(-100%);
+	-ms-transform: translate(-100%);
+	transform: translate(-100%);
+}
