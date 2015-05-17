@@ -15,7 +15,7 @@
 	}
 }
 
-#hero {
+.hero {
 	position: relative;
 	display: table;
 	width: 100%;
@@ -86,6 +86,12 @@
 		}
 	}
 }
+
+// Product
+.product-section {
+	margin: 60px 0;
+}
+
 
 .grid {
 	overflow: hidden;
