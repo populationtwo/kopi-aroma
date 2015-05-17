@@ -2,3 +2,17 @@
    Layout/Nav
    ======================= */
 
+
+#menu {
+	position: fixed;
+	z-index: 100;
+	width: 280px;
+	height: 100%;
+	background: $mine;
+	color: white;
+	padding-right: 25px;
+	text-align: right;
+	-webkit-transform: translate(-100%);
+	-ms-transform: translate(-100%);
+	transform: translate(-100%);
+}
