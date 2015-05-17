@@ -9,6 +9,23 @@ body {
 	padding: 0;
 }
 
+
+.container {
+	@media (min-width: $screen-md-min) { //min 992
+		width: 690px;
+
+	}
+	@media (min-width: $screen-lg-min) {
+		width: 890px;
+	}
+	@media (min-width: 1470px) {
+		width: 1170px;
+	}
+}
 h1, h2, h3, h4 {
 	font-family: $serif-2;
+}
+
+img {
+	max-width: 100%;
 }
