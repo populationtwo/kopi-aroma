@@ -1,0 +1,38 @@
+<div class="container">
+	<div class="post-entry" id="ss-all-posts" ng-controller="FeedCtrl">
+		<article class="post panel" ng-repeat="feed in feeds">
+			<div class="post-wrap">
+				<div class="post-main">
+					<div class="post-body">
+						<div class="post-header-wrap">
+							<a href="" class="post-author">
+								<img class="post-avatar" src="{{feed.avatar}}" alt="" />
+								<span>{{feed.name}}</span></a>
+						</div>
+						<div class="post-content">
+							<p>{{feed.excerpt}}</p>
+						</div>
+					</div>
+				</div>
+				<!--end .post-main -->
+
+				<div class="post-action">
+
+					<div class="post-meta bottom">
+						<ul>
+							<li>{{feed.city}}, {{feed.country}}</li>
+							<li>
+								{{feed.quantity}}
+							</li>
+
+						</ul>
+					</div>
+				</div>
+				<!--end .post-action -->
+
+			</div>
+
+		</article>
+
+	</div>
+</div>

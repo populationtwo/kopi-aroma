@@ -20,8 +20,8 @@
 	margin: 0 0 25px;
 	width: 100%;
 	@include box-sizing(border-box);
-	border: 1px solid blue;
-	@include border-radius(4px);
+	border: 1px solid #dee1e5;
+	@include border-radius(3px);
 	overflow: hidden;
 }
 
@@ -61,6 +61,12 @@
 
 	ul {
 		@include ul-list-inline;
+		li {
+			list-style: none;
+			float: left;
+			margin-left: 1.375rem;
+			display: block;
+		}
 	}
 }
 
@@ -92,28 +98,13 @@
 }
 
 .post-action-btn {
-	background: url("../img/build/icons/post-cta.png") 0 0 no-repeat;
+	@extend .image-replace;
+
+	background: url("../images/post-cta.png") 0 0 no-repeat;
 	width: 13px;
 	height: 13px;
-	@extend .image-replace;
-	&.reply {
-		background-position: 0 0;
-		&:hover, &:active {
-			background-position: 0 -30px;
-		}
+	display: block;
 
-	}
-	&.favorite {
-		background-position: -35px 0;
-		&:hover, &:active {
-			background-position: -35px -30px;
-		}
-	}
-}
-
-.post-action-time {
-	font-size: 14px;
-	color: #cbcfd6;
 }
 
 .post-image img {
