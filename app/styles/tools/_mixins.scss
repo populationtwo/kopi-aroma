@@ -44,10 +44,7 @@
 
 // = Box-sizing
 // -----------------------------
-@mixin box-sizing ($box : border-box) {
-	//  content-box | border-box | inherit
-	@include prefixer(box-sizing, $box, webkit moz spec);
-}
+
 
 // = UL
 // -----------------------------
@@ -67,3 +64,10 @@
     padding: 0;
 }
 
+
+.image-replace {
+	border: 0;
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+}

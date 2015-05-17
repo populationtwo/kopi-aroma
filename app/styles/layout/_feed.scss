@@ -1,0 +1,157 @@
+/* --------------------------------------------------------------
+	Post Layout
+-------------------------------------------------------------- */
+.post-entry {
+
+	column-gap: 20px;
+	@media (min-width: $screen-md-min) {
+		column-count: 2;
+	}
+
+	@media (min-width: $screen-lg-min) {
+		column-count: 3;
+	}
+}
+
+.panel {
+	@include single-transition(transform, 0.2s, linear);
+	display: inline-block;
+	background: #fff;
+	margin: 0 0 25px;
+	width: 100%;
+	@include box-sizing(border-box);
+	border: 1px solid blue;
+	@include border-radius(4px);
+	overflow: hidden;
+}
+
+.post-main {
+	padding: 20px 25px;
+}
+
+.post-body {
+	margin-left: 60px;
+
+}
+
+.post-header-wrap {
+	@include clearfix;
+
+	margin-bottom: -10px;
+
+}
+
+.post-avatar {
+	float: left;
+
+	margin-left: -60px;
+
+}
+
+.post-author {
+
+	span {
+		color: #444;
+	}
+
+}
+
+.post-meta {
+	float: right;
+
+	ul {
+		@include ul-list-inline;
+	}
+}
+
+.view-tile .post-meta.top {
+	display: none;
+}
+
+.view-tile .post-video .post-image a {
+	position: inherit;
+}
+
+.view-tile .post-video .post-image a > div {
+
+	@media (min-width: $screen-md-min) {
+		display: none;
+	}
+}
+
+.post-content {
+	color: red;
+	font-size: 15px;
+	line-height: 1.6;
+	a {
+		@include link-colors(red, green);
+	}
+	p {
+		word-break: break-word;
+	}
+}
+
+.post-action-btn {
+	background: url("../img/build/icons/post-cta.png") 0 0 no-repeat;
+	width: 13px;
+	height: 13px;
+	@extend .image-replace;
+	&.reply {
+		background-position: 0 0;
+		&:hover, &:active {
+			background-position: 0 -30px;
+		}
+
+	}
+	&.favorite {
+		background-position: -35px 0;
+		&:hover, &:active {
+			background-position: -35px -30px;
+		}
+	}
+}
+
+.post-action-time {
+	font-size: 14px;
+	color: #cbcfd6;
+}
+
+.post-image img {
+	width: 100%;
+	max-width: 100%;
+}
+
+.post-action {
+	@include clearfix;
+	padding-left: 84px;
+	padding-right: 20px;
+	margin: 15px 0;
+
+	.expand {
+		font-size: 12px;
+		//		color: red;
+		@include link-colors(red, yellow);
+		&:hover {
+			text-decoration: none;
+			.caret {
+				border-top-color: yellow;
+			}
+		}
+		.caret {
+			border-top-color: red;
+			margin-top: 8px;
+
+		}
+
+		&.up .caret {
+			border-top-width: 0;
+			border-bottom-width: 5px;
+			margin-top: 4px;
+			border-bottom: 4px solid red;;
+			border-top: 4px solid transparent;
+			content: "";
+		}
+
+	}
+}
+
