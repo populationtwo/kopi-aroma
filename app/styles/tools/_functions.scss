@@ -24,3 +24,11 @@
 //	}
 //	@return ($pxval / $base) * 1rem;
 //}
+
+// Transparent black and white
+@function black($opacity){
+	@return rgba(0,0,0,$opacity)
+}
+@function white($opacity){
+	@return rgba(255,255,255,$opacity)
+}

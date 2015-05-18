@@ -174,5 +174,38 @@
 		"city"      : "Hall",
 		"country"   : "Kenya",
 		"image"     : ""
+	},
+	{
+		"_id": "555942e7572215e67ba62b37",
+		"name": "Alisa Valenzuela",
+		"avatar": "http://placehold.it/40x40",
+		"registered": "2015-05-11T17:45:15 +04:00",
+		"excerpt": "laborum dolor in officia pariatur eiusmod sint ea consequat aliquip aute ut tempor irure aute",
+		"quantity": 48,
+		"city": "Otranto",
+		"country": "Netherlands Antilles",
+		"image": ""
+	},
+	{
+		"_id": "555942e7510696c337869a66",
+		"name": "Julia Robertson",
+		"avatar": "http://placehold.it/40x40",
+		"registered": "2015-04-16T11:12:21 +04:00",
+		"excerpt": "exercitation dolor veniam aute irure nostrud elit culpa sint excepteur nostrud amet in est ullamco",
+		"quantity": 43,
+		"city": "Nelson",
+		"country": "Bangladesh",
+		"image": ""
+	},
+	{
+		"_id": "555942e7417ab52e269c202f",
+		"name": "Diane Valencia",
+		"avatar": "http://placehold.it/40x40",
+		"registered": "2015-01-27T18:30:55 +05:00",
+		"excerpt": "officia sint laboris velit eu sint labore consectetur aliquip est fugiat amet reprehenderit laborum occaecat",
+		"quantity": 24,
+		"city": "Harrison",
+		"country": "Spain",
+		"image": ""
 	}
 ]
