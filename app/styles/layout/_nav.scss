@@ -2,7 +2,6 @@
    Layout/Nav
    ======================= */
 
-
 #menu {
 	position: fixed;
 	z-index: 100;
@@ -16,8 +15,98 @@
 	-ms-transform: translate(-100%);
 	transform: translate(-100%);
 
-//	@media (min-width: $screen-lg-min) {
-//		width: 280px;
-//	}
+	//	@media (min-width: $screen-lg-min) {
+	//		width: 280px;
+	//	}
+
+}
+
+.main-navbar {
+	background: $mine;
+	color: white;
+	border-radius: 0;
+	margin-bottom: 0;
+	font-family: $sans-serif;
+	a {
+		@include link-colors(white, $gold);
+	}
+
+	@media (min-width: $screen-md-min) {
+		position: fixed;
+		z-index: 100;
+		width: 280px;
+		height: 100%;
+		//				background: $mine;
+		//				color: white;
+		text-align: right;
+		-webkit-transform: translate(-100%);
+		-ms-transform: translate(-100%);
+		transform: translate(-100%);
+	}
+	.container {
+		@media (min-width: $screen-md-min) {
+			width: 100%;
+		}
+	}
+	.navbar-header, .navbar-collapse {
+		@media (min-width: $screen-md-min) {
+			width: 100%;
+
+		}
+
+	}
+	.navbar-header {
+		@media (min-width: $screen-md-min) {
+			float: none;
+		}
+	}
+	.navbar-collapse {
+		@media (min-width: $screen-md-min) {
+			padding: 0;
+		}
+	}
+	.navbar-nav li.active a {
+		color: $gold;
+	}
+	.navbar-nav, .navbar-nav > li {
+		@media (min-width: $screen-md-min) {
+			float: none;
+		}
+	}
+}
+
+.navbar-toggle {
+	.icon-bar {
+		background: white;
+		@include single-transition(background, 0.4s, ease-out);
+
+	}
+	&:hover, &:focus {
+		.icon-bar {
+			background: $gold;
+		}
+	}
+}
+
+.navbar-nav > li > a:hover {
+	background: none;
+}
+
+
+.footer-note {
+	@media (min-width: $screen-md-min) {
+		font-family: $serif;
+		position: absolute;
+		bottom: 20px;
+		text-align: right;
+		right: 30px;
+	}
+	> li > a {
+		@media (min-width: $screen-md-min) {
+			padding: 3px 0;
+			font-size: 12px;
+			color: white(0.5)
+		}
+	}
 
 }
