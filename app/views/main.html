@@ -17,34 +17,119 @@
 <section class="product-section section-wrap">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-6"><img src="http://placehold.it/800x600" alt="" /></div>
+			<div class="col-sm-6">
+				<img src="../images/photos/sumatra.jpg" alt="Sumatra">
+				<!--<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">-->
+					<!--&lt;!&ndash; Indicators &ndash;&gt;-->
+					<!--<ol class="carousel-indicators">-->
+						<!--<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>-->
+						<!--<li data-target="#carousel-example-generic" data-slide-to="1"></li>-->
+						<!--<li data-target="#carousel-example-generic" data-slide-to="2"></li>-->
+					<!--</ol>-->
+
+					<!--&lt;!&ndash; Wrapper for slides &ndash;&gt;-->
+					<!--<div class="carousel-inner" role="listbox">-->
+						<!--<div class="item active">-->
+							<!--<img src="../images/photos/sumatra.jpg" alt="Sumatra">-->
+						<!--</div>-->
+						<!--<div class="item">-->
+							<!--<img src="../images/photos/decaf_sumatra.jpg" alt="Decaf Sumatra">-->
+						<!--</div>-->
+						<!--<div class="item">-->
+							<!--<img src="../images/photos/reserve_sumatra.jpg" alt="Reserve Sumatra">-->
+						<!--</div>-->
+
+
+						<!---->
+					<!--</div>-->
+
+					<!--&lt;!&ndash; Controls &ndash;&gt;-->
+					<!--<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">-->
+						<!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+						<!--<span class="sr-only">Previous</span>-->
+					<!--</a>-->
+					<!--<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">-->
+						<!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+						<!--<span class="sr-only">Next</span>-->
+					<!--</a>-->
+				<!--</div>-->
+
+
+
+
+			</div>
 			<div class="col-sm-4">
 				<div class="product-summary">
 
 					<h1>Sumatra, Whole Bean</h1>
-					<h4>$40</h4>
 
-					<p class="">Dark Roast </p>
+					<p class="pricing">$19<span> per 12 oz Bag</span></p>
+
+					<p class="category">Dark Roast </p>
 
 					<div class="entry-content">
+
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab amet commodi cumque dolorem
 							eaque, eius facilis laboriosam laudantium maiores molestias nihil odit perspiciatis
 							provident quaerat recusandae rerum sapiente sunt totam?</p>
 					</div>
-
 					<form class="form-inline">
-						<div class="form-group">
-							<label class="sr-only" for="exampleInputAmount">Quantity:</label>
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="form-group cart-quantity">
 
-							<div class="input-group">
-								<div class="input-group-addon">Quantity:</div>
-								<input type="text" class="form-control" id="exampleInputAmount" placeholder="1">
+									<label for="cart_quantity">Quantity</label>
 
-								<div class="input-group-addon">bags</div>
+									<select class="select optional form-control" name="cart_item" id="cart_quantity">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+										<option value="11">11</option>
+										<option value="12">12</option>
+										<option value="13">13</option>
+										<option value="14">14</option>
+										<option value="15">15</option>
+										<option value="16">16</option>
+										<option value="17">17</option>
+										<option value="18">18</option>
+										<option value="19">19</option>
+										<option value="20">20</option>
+									</select>
+								</div>
+
 							</div>
 						</div>
-						<button type="submit" class="btn btn-primary">Buy</button>
+						<div class="row cart-submit">
+							<div class="col-lg-7">
+								<a ng-href="#/checkout" type="submit" class="btn btn-prime">Add to Cart</a>
+							</div>
+							<div class="col-lg-5">
+								<p>Roasts & ships in 1 to 2 business days</p>
+							</div>
+						</div>
 					</form>
+
+
+					<!--<form class="form-inline">-->
+					<!--<div class="form-group">-->
+					<!--<label class="sr-only" for="exampleInputAmount">Quantity:</label>-->
+
+					<!--<div class="input-group">-->
+					<!--<div class="input-group-addon">Quantity:</div>-->
+					<!--<input type="text" class="form-control" id="exampleInputAmount" placeholder="1">-->
+
+					<!--<div class="input-group-addon">bags</div>-->
+					<!--</div>-->
+					<!--</div>-->
+					<!--<button type="submit" class="btn btn-primary">Buy</button>-->
+					<!--</form>-->
 				</div>
 
 
