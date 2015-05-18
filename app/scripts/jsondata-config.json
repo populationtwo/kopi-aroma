@@ -8,6 +8,7 @@
 		excerpt: '{{lorem(15, "words")}}',
 		quantity:     '{{integer(1, 100)}}',
 		city: '{{city()}}',
-		country: '{{country()}}'
+		country: '{{country()}}',
+		image: ''
 	}
 ]

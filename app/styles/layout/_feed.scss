@@ -1,9 +1,19 @@
 /* --------------------------------------------------------------
 	Post Layout
 -------------------------------------------------------------- */
+.feed-section {
+	background: $spring-wood;
+	padding: 100px 0;
+}
+
 .post-entry {
 
 	column-gap: 20px;
+
+
+//	column-fill: balance;
+
+
 	@media (min-width: $screen-md-min) {
 		column-count: 2;
 	}
@@ -15,14 +25,24 @@
 
 .panel {
 	@include single-transition(transform, 0.2s, linear);
-	display: inline-block;
+	display: block;
 	background: #fff;
 	margin: 0 0 25px;
 	width: 100%;
 	@include box-sizing(border-box);
-	border: 1px solid #dee1e5;
-	@include border-radius(3px);
+//	@include border-radius(3px);
 	overflow: hidden;
+
+	-webkit-column-break-inside: avoid;
+	-moz-column-break-inside: avoid;
+	column-break-inside: avoid;
+
+
+
+
+
+
+
 }
 
 .post-main {
@@ -36,8 +56,8 @@
 
 .post-header-wrap {
 	@include clearfix;
+	margin-bottom: -0.625rem;
 
-	margin-bottom: -10px;
 
 }
 
@@ -49,7 +69,8 @@
 }
 
 .post-author {
-
+	font-family: $sans-serif;
+	text-transform: uppercase;
 	span {
 		color: #444;
 	}
@@ -58,16 +79,8 @@
 
 .post-meta {
 	float: right;
-
-	ul {
-		@include ul-list-inline;
-		li {
-			list-style: none;
-			float: left;
-			margin-left: 1.375rem;
-			display: block;
-		}
-	}
+	width: 60%;
+	color: rgba(0,0,0,0.5);
 }
 
 .view-tile .post-meta.top {
@@ -86,9 +99,10 @@
 }
 
 .post-content {
-	color: red;
-	font-size: 15px;
+	color: rgba(0,0,0,0.8);
+	font-size: 14px;
 	line-height: 1.6;
+	font-family: $serif-2;
 	a {
 		@include link-colors(red, green);
 	}
@@ -114,33 +128,20 @@
 
 .post-action {
 	@include clearfix;
-	padding-left: 84px;
-	padding-right: 20px;
+	padding: 0 20px 0 84px;
 	margin: 15px 0;
-
-	.expand {
-		font-size: 12px;
+	font-family: $sans-serif;
+	.number {
+		font-size: 14px;
+		width: 40%;
+		float: left;
 		//		color: red;
-		@include link-colors(red, yellow);
+		@include link-colors($gold, $gold);
 		&:hover {
 			text-decoration: none;
 			.caret {
 				border-top-color: yellow;
 			}
-		}
-		.caret {
-			border-top-color: red;
-			margin-top: 8px;
-
-		}
-
-		&.up .caret {
-			border-top-width: 0;
-			border-bottom-width: 5px;
-			margin-top: 4px;
-			border-bottom: 4px solid red;;
-			border-top: 4px solid transparent;
-			content: "";
 		}
 
 	}

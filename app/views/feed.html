@@ -15,17 +15,15 @@
 					</div>
 				</div>
 				<!--end .post-main -->
-
+				<div class="post-image" ng-show=feed.image>
+					<a href="" class="modal-trigger" data-image="">
+						<img ng-src="images/photos/{{feed.image}}" alt="Description" />
+					</a>
+				</div>
 				<div class="post-action">
-
-					<div class="post-meta bottom">
-						<ul>
-							<li>{{feed.city}}, {{feed.country}}</li>
-							<li>
-								{{feed.quantity}}
-							</li>
-
-						</ul>
+					<p class="number"><span >{{feed.quantity}}</span> bags</p>
+					<div class="post-meta">
+						{{feed.city}}, {{feed.country}}
 					</div>
 				</div>
 				<!--end .post-action -->

@@ -2,3 +2,26 @@
    Layout/Footer
    ======================= */
 
+.page-footer {
+	background: shade($spring-wood, 3%);
+	@include clearfix;
+	padding: 2.5rem 0.9375rem;
+	text-align: center;
+	border-top: 1px solid darken($spring-wood, 5%);
+}
+
+.footer-links {
+	@include ul-list-inline();
+	text-transform: uppercase;
+	font-size: 11px;
+	li {
+		display: inline;
+		padding: 0 12px;
+		line-height: 2;
+	}
+	a {
+		@include link-colors($gray-light, $gold);
+
+	}
+
+}
