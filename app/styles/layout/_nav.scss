@@ -92,8 +92,10 @@
 	}
 }
 
-.navbar-nav > li > a:hover {
-	background: none;
+.navbar-nav > li > {
+	a:hover, a:focus {
+		background: none;
+	}
 }
 
 .navbar-brand-large {
