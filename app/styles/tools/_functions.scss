@@ -2,29 +2,6 @@
 // Tools/Functions
 // =======================
 
-//@function rem($pxval) {
-//	$base: 16;
-//	@return ($pxval / $base) * 1rem;
-//}
-//$em-base: 16px !default;
-//
-//@function strip-units($value) {
-//	@return ($value / ($value * 0 + 1));
-//}
-//
-//
-//@function rem($pxval) {
-//	@if not unitless($pxval) {
-//		$pxval: strip-units($pxval);
-//	}
-//
-//	$base: $em-base;
-//	@if not unitless($base) {
-//		$base: strip-units($base);
-//	}
-//	@return ($pxval / $base) * 1rem;
-//}
-
 // Transparent black and white
 @function black($opacity){
 	@return rgba(0,0,0,$opacity)

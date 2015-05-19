@@ -7,13 +7,7 @@
 }
 
 .post-entry {
-
 	column-gap: 20px;
-
-
-//	column-fill: balance;
-
-
 	@media (min-width: $screen-md-min) {
 		column-count: 2;
 	}
@@ -30,18 +24,10 @@
 	margin: 0 0 25px;
 	width: 100%;
 	@include box-sizing(border-box);
-//	@include border-radius(3px);
 	overflow: hidden;
-
 	-webkit-column-break-inside: avoid;
 	-moz-column-break-inside: avoid;
 	column-break-inside: avoid;
-
-
-
-
-
-
 
 }
 
@@ -51,21 +37,16 @@
 
 .post-body {
 	margin-left: 60px;
-
 }
 
 .post-header-wrap {
 	@include clearfix;
 	margin-bottom: -0.625rem;
-
-
 }
 
 .post-avatar {
 	float: left;
-
 	margin-left: -60px;
-
 }
 
 .post-author {
@@ -74,13 +55,12 @@
 	span {
 		color: #444;
 	}
-
 }
 
 .post-meta {
 	float: right;
 	width: 60%;
-	color: rgba(0,0,0,0.5);
+	color: rgba(0, 0, 0, 0.5);
 }
 
 .view-tile .post-meta.top {
@@ -92,14 +72,13 @@
 }
 
 .view-tile .post-video .post-image a > div {
-
 	@media (min-width: $screen-md-min) {
 		display: none;
 	}
 }
 
 .post-content {
-	color: rgba(0,0,0,0.8);
+	color: rgba(0, 0, 0, 0.8);
 	font-size: 14px;
 	line-height: 1.6;
 	font-family: $serif-2;
@@ -113,12 +92,10 @@
 
 .post-action-btn {
 	@extend .image-replace;
-
 	background: url("../images/post-cta.png") 0 0 no-repeat;
 	width: 13px;
 	height: 13px;
 	display: block;
-
 }
 
 .post-image img {
@@ -135,7 +112,6 @@
 		font-size: 14px;
 		width: 40%;
 		float: left;
-		//		color: red;
 		@include link-colors($gold, $gold);
 		&:hover {
 			text-decoration: none;

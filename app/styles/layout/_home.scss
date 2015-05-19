@@ -4,10 +4,6 @@
 
 .main-wrapper {
 	height: 100%;
-
-	@media (min-width: $screen-md-min) {
-		//		padding-left: 240px;
-	}
 	@media (min-width: $screen-md-min) {
 		padding-left: 280px;
 	}
@@ -22,15 +18,9 @@
 	background: #000 url('../images/StBalmainCoffee.jpg') no-repeat center center;
 	background-size: cover;
 	@media (min-width: $screen-md-min) {
-
 		height: 29.25rem;
-
 	}
 	&:after {
-		//		@media (min-width: $screen-md-min) {
-		//			height: 100vh;
-		//		}
-
 		content: "";
 		position: absolute;
 		top: 0;
@@ -109,7 +99,6 @@
 		color: $gold;
 	}
 	.entry-content {
-		//		font-family: $serif;
 		margin: 40px 0;
 	}
 
@@ -124,11 +113,12 @@
 	}
 	.cart-submit {
 		.col-lg-7, .col-lg-5 {
-		@media (min-width: 1120px) and (max-width: 1480px) {
-			width: 100%;
+			@media (min-width: 1120px) and (max-width: 1480px) {
+				width: 100%;
 
-		}}
-			p {
+			}
+		}
+		p {
 			margin: 6px 0 0;
 			color: $gray-light;
 			font-size: 12px;
