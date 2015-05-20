@@ -1,3 +1,60 @@
 /* ==|================
    Module/Keyframes
    =================== */
+.animate-view {
+	&.ng-enter, &.ng-leave {
+
+	}
+	/* when hiding the thing */
+	&.ng-leave {
+		@include animation-duration(0.2s);
+		@include animation-fill-mode(both);
+		@include animation-name(fadeOut);
+	}
+	/* when showing the thing */
+	&.ng-enter {
+		@include animation-duration(0.6s);
+		@include animation-fill-mode(both);
+		@include animation-name(fadeIn);
+	}
+}
+
+/* ANIMATIONS (FROM ANIMATE.CSS) */
+@-webkit-keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+
+@keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+
+@-webkit-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
