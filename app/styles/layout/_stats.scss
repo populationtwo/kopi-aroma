@@ -100,12 +100,12 @@
 	position: relative;
 	margin-bottom: 40px;
 	@media (min-width: $screen-md-min) {
-		width: 50%;
+		width: 33.333%;
 	}
-	@media (min-width: $screen-lg-min) {
-		width: 25%;
-		margin-bottom: 0;
-	}
+//	@media (min-width: $screen-lg-min) {
+//		width: 25%;
+//		margin-bottom: 0;
+//	}
 }
 
 .number {
