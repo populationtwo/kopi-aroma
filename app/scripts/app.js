@@ -31,7 +31,6 @@ angular
 				redirectTo: '/'
 			} );
 	} )
-
 	.factory( 'purchaseDataFactory', function ($q, $timeout, $http) {
 		var purchaseData = {
 			fetch: function () {
@@ -47,7 +46,6 @@ angular
 				return deferred.promise;
 			}
 		};
-
 		return purchaseData;
 	} );
 

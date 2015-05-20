@@ -2,9 +2,6 @@
    Module/Keyframes
    =================== */
 .animate-view {
-	&.ng-enter, &.ng-leave {
-
-	}
 	/* when hiding the thing */
 	&.ng-leave {
 		@include animation-duration(0.2s);
@@ -29,7 +26,6 @@
 	}
 }
 
-
 @keyframes fadeOut {
 	0% {
 		opacity: 1;
@@ -39,7 +35,6 @@
 	}
 }
 
-
 @-webkit-keyframes fadeIn {
 	0% {
 		opacity: 0;
@@ -48,7 +43,6 @@
 		opacity: 1;
 	}
 }
-
 
 @keyframes fadeIn {
 	0% {
